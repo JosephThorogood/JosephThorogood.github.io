@@ -12,12 +12,12 @@
   const symbolSegments = {
     1: "Exercise 8",
     2: "Exercise 7",
-    3: "Excercise 6",
-    4: "Excercise 5",
-    5: "Excercise 4",
-    6: "Excercise 3",
-    7: "Excercise 2",
-    8: "Excercise 1",
+    3: "Exercise 6",
+    4: "Exercise 5",
+    5: "Exercise 4",
+    6: "Exercise 3",
+    7: "Exercise 2",
+    8: "Exercise 1",
   }
 
   const handleWin = (actualDeg) => {
