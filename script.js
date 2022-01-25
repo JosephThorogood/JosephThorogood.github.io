@@ -1,5 +1,4 @@
-// Immediately invoked function expression
-// to not pollute the global scope
+
 (function() {
   const wheel = document.querySelector('.wheel');
   const startButton = document.querySelector('.button');
@@ -45,10 +44,9 @@
     wheel.classList.remove('blur');
     // Enable button when spin is over
     startButton.style.pointerEvents = 'auto';
-    // Need to set transition to none as we want to rotate instantly
+    // Need to set transition to none
     wheel.style.transition = 'none';
     // Calculate degree on a 360 degree basis to get the "natural" real rotation
-    // Important because we want to start the next spin from that one
     // Use modulus to get the rest value
     const actualDeg = deg % 360;
     // Set the real rotation instantly without animation
