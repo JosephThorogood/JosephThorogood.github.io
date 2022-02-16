@@ -1,7 +1,7 @@
 
 (function() {
   const wheel = document.querySelector('.wheel');
-  const startButton = document.querySelector('.button');
+  const startButton = document.querySelector('.wheel');
   const display = document.querySelector('.display');
   
   let deg = 0;
