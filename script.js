@@ -2,6 +2,7 @@
 (function() {
   const wheel = document.querySelector('.wheel');
   const startButton = document.querySelector('.wheel');
+  const startButton = document.querySelector('.button');
   const display = document.querySelector('.display');
   
   let deg = 0;
