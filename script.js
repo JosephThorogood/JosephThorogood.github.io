@@ -54,12 +54,8 @@
     // Calculate and display the winning symbol
     handleWin(actualDeg);
   });
-})();
-
-
-const btn = document.getElementById('wheel');
-
-wheel.addEventListener('transitionend', () => {
+	
+	wheel.addEventListener('transitionend', () => {
 	const particles = [];
 	const color = randomColor();
 	
@@ -112,3 +108,8 @@ function randomLocation() {
 function randomColor() {
 	return `hsl(${Math.floor(Math.random() * 361)}, 100%, 50%)`;
 }
+  });
+	
+})();
+
+
