@@ -36,16 +36,16 @@
   height: auto;
 }
 
-.button {
-  display: block;
-  width: 50%;
-  margin: 40px auto;
-  cursor: pointer;
-}
-
-.button:hover {
-  opacity: 0.8;
-}
+//.button {
+//  display: block;
+//  width: 50%;
+//  margin: 40px auto;
+//  cursor: pointer;
+//}
+//
+//.button:hover {
+//  opacity: 0.8;
+//}
 
 .blur {
   animation: blur 1.4s;
