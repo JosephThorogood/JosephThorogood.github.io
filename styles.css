@@ -47,6 +47,12 @@
   opacity: 0.8;
 }
 
+.button:active {
+  transform: translate(4px, 4px)
+    box-shadow: 0 0 0 rebeccapurple;
+}
+
+
 .blur {
   animation: blur 1.4s;
 }
