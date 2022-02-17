@@ -16,7 +16,7 @@
     5: "Exercise 4",
     6: "Exercise 3",
     7: "Exercise 2",
-    8: "Exercise 1",
+    8: "href="Exercise1.html",
   }
 
   const handleWin = (actualDeg) => {
