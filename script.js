@@ -9,14 +9,14 @@
 
   // Counter clockwise
   const symbolSegments = {
-    1: "Exercise 8",
-    2: "Exercise 7",
-    3: "Exercise 6",
-    4: "Exercise 5",
-    5: "Exercise 4",
-    6: "Exercise 3",
-    7: "Exercise 2",
-    8: "href="Exercise1.html",
+    1: "do Exercise 8",
+    2: "do Exercise 7",
+    3: "do Exercise 6",
+    4: "do Exercise 5",
+    5: "do Exercise 4",
+    6: "do Exercise 3",
+    7: "do Exercise 2",
+    8: "blalalal",
   }
 
   const handleWin = (actualDeg) => {
