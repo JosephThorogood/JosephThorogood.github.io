@@ -8,6 +8,7 @@
   display: inline-block;
   font-size: 20px;
   transition-duration: 0.4s;
+  width: 50%;
 }
 
 .button:hover {
