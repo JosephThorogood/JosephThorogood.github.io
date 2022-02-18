@@ -5,13 +5,6 @@
   const display = document.querySelector('.display');
   const displayLink = document.getElementById('displayLink');
 	
-  const msg2 = `Here is a list of instructions
-  1. Click on the 'Tap to spin' button
-  2. Click on the link in the purple box to find out more about your exercise
-  3. Enjoy your exercise!`;
-  const display2 = document.querySelector('.display2');
-  display2.innterHTML = msg2;
-	
   const segmentCount = 8;
   const zoneSize = 360 / segmentCount; // deg
 
