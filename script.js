@@ -3,28 +3,33 @@
   const wheel = document.querySelector('.wheel');
   const startButton = document.querySelector('.button');
   const display = document.querySelector('.display');
-  
+  const displayLink = document.getElementById('displayLink');
+
+  const segmentCount = 8;
+  const zoneSize = 360 / segmentCount; // deg
+
   let deg = 0;
-  let zoneSize = 45; // deg
 
   // Counter clockwise
-  const symbolSegments = {
-    1: "do Exercise 8",
-    2: "do Exercise 7",
-    3: "do Exercise 6",
-    4: "do Exercise 5",
-    5: "do Exercise 4",
-    6: "do Exercise 3",
-    7: "do Exercise 2",
-    8: "blalalal",
+  const exerciseDetails = (symbolNumber) => {
+    const correctedNumber = segmentCount - symbolNumber + 1;
+    const msg = `do exercise ${correctedNumber}`;
+    const href = `/exercises/ex${correctedNumber}.html`;
+
+    return [msg, href];
   }
 
   const handleWin = (actualDeg) => {
     const winningSymbolNr = Math.ceil(actualDeg / zoneSize);
-    display.innerHTML = symbolSegments[winningSymbolNr];
+    const [msg, href] = exerciseDetails(winningSymbolNr)
+
+    display.innerHTML = msg;
+    displayLink.href = href;
   }
 
   startButton.addEventListener('click', () => {
+    // Reset link
+    displayLink.removeAttribute('href');
     // Reset display
     display.innerHTML = "What exercise will you get!";
     // Disable button during spin
