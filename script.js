@@ -13,7 +13,7 @@
   // Counter clockwise
   const exerciseDetails = (symbolNumber) => {
     const correctedNumber = segmentCount - symbolNumber + 1;
-    const msg = `do exercise ${correctedNumber}`;
+    const msg = `You've picked exercise ${correctedNumber}, Click here to find out more!`;
     const href = `/exercises/ex${correctedNumber}.html`;
 
     return [msg, href];
