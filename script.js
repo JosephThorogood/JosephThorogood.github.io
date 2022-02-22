@@ -13,9 +13,37 @@
   // Counter clockwise
   const exerciseDetails = (symbolNumber) => {
     const correctedNumber = segmentCount - symbolNumber + 1;
-    const msg = `You've picked exercise ${correctedNumber}, Click here to find out more!`;
+  //  const msg = `You've picked exercise ${correctedNumber}, Click here to find out more!`;
     const href = `/exercises/ex${correctedNumber}.html`;
 
+    let msg = ""
+  switch(correctedNumber){
+    case 1:
+      msg = "You've picked tricep dips, Click here to find out more!";
+      break;
+    case 2:
+      msg = "You've picked desk push ups, Click here to find out more!";
+      break;
+    case 3:
+      msg = "You've picked oblique twists, Click here to find out more!";
+      break;
+    case 4:
+      msg = "You've picked seated leg extensions, Click here to find out more!";
+      break;   
+    case 5:
+      msg = "You've picked overhead arm stretches, Click here to find out more!";
+      break;
+    case 6:
+      msg = "You've picked upper body stretches, Click here to find out more!";
+      break; 
+    case 7:
+      msg = "You've picked leg stretches, Click here to find out more!";
+      break;
+    case 8:
+      msg = "You've picked neck stretches, Click here to find out more!";
+      break;
+  
+  }
     return [msg, href];
   }
 
