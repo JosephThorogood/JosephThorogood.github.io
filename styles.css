@@ -1,9 +1,7 @@
 #app {
   height: auto;
+  margin: 0 auto;
   position: relative;
-  margin: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .display {
@@ -20,13 +18,11 @@
   margin: 20px auto;
   background-color: rgb(226, 222, 204);
   color: rgb(0, 0, 0);
-  max-width: 40%;
 }
 
 .marker {
   z-index: 2;
   width: 15%;
-  max-width: 20%;
   height: auto;
   position: absolute;
   left: 50%;
@@ -35,14 +31,8 @@
 }
 
 .wheel {
-  display: flex;
   width: 100%;
   height: auto;
-  max-width: 40%;
-  align-items: center;
-  margin: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .button {
@@ -50,8 +40,6 @@
   width: 50%;
   margin: 40px auto;
   cursor: pointer;
-  max-width: 40%;
-
 }
 
 body {
