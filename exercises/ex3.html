@@ -115,13 +115,31 @@ body {
       </ol>
     </div>
 	
+<div class="Video">
+  <button onclick="playPause()">Play/Pause</button> 
+  <video id="video1" width="420">
+   <source src="Video3.mp4" type="video/mp4">
+ </video>
+</div>
+	
 <div class="container">
   <div class="center">
 	<a href='https://wheel-of-exercise.co.uk/'><button class="button">Click here to spin again!</button>
 	</a>
   </div>
 </div>		
-	
+
+<script> 
+  var myVideo = document.getElementById("video3"); 
+  
+  function playPause() { 
+    if (myVideo.paused) 
+      myVideo.play(); 
+    else 
+      myVideo.pause(); 
+  } 
+  
+  </script> 
 <body></body>
 
 
