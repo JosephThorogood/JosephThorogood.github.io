@@ -95,6 +95,26 @@ body {
   background-attachment: fixed;
 }
 
+.Video {
+  border: 5px outset red;
+  background-color: lightblue;    
+  display: flex;
+  align-items: center;
+  width: 70%;
+  min-height: 50px;
+  border: 5px solid black;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin: 20px auto;
+  background-color: rgb(206,222,235);
+  color: rgb(0,0,0);
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 10px 50px 5px 50px;
+}
+
+
 </style>
 </head>
 <body>
@@ -116,14 +136,33 @@ body {
         <li>Return to the starting position and repeat for at least 5 reps</li>
       </ol>
     </div>
-	
+
+<div class="Video">
+  <button onclick="playPause()">Play/Pause</button> 
+  <video id="video1" width="420">
+   <source src="Video1.mp4" type="video/mp4">
+ </video>
+</div>
+
 <div class="container">
   <div class="center">
 	<a href='https://wheel-of-exercise.co.uk/'><button class="button">Click here to spin again!</button>
 	</a>
   </div>
 </div>		
-	
+
+<script> 
+  var myVideo = document.getElementById("video1"); 
+  
+  function playPause() { 
+    if (myVideo.paused) 
+      myVideo.play(); 
+    else 
+      myVideo.pause(); 
+  } 
+  
+  </script> 
+
 <body></body>
 
 
